@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "A complementary dataset of open-eyes EEG recordings in a photo-stimulation setting from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
   "description": "This dataset comprises open-eyes EEG recordings from 88 participants (36 with Alzheimer's disease, 23 with frontotemporal dementia, and 29 healthy controls) during photic stimulation at incremental frequencies (5-30 Hz). Recorded using a 19-channel scalp electrode montage according to the 10-20 system at 500 Hz sampling rate, the dataset complements a previously published eyes-closed resting-state EEG collection from the same cohort. Both raw and preprocessed versions are provided, with preprocessing including bandpass filtering, artifact subspace reconstruction, and independent component analysis.",
-  "methods_description": "EEG recordings were acquired using a Nihon Kohden EEG 2100 clinical device with 19 scalp electrodes (10-20 system) plus mastoid reference electrodes. Sampling rate was 500 Hz with 10 µV/mm resolution. Participants were seated with eyes open during photic stimulation at frequencies of 5, 10, 15, and up to 30 Hz in 5 Hz increments. Preprocessing included Butterworth bandpass filtering (0.5-45 Hz), re-referencing to A1-A2, Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) with automatic artifact classification using ICLabel.",
+  "methods_description": "EEG recordings were acquired using a Nihon Kohden EEG 2100 clinical device with 19 scalp electrodes (10-20 system) plus 2 mastoid reference electrodes. Sampling rate was 500 Hz with 10 µV/mm resolution. Recordings were performed with participants seated and eyes open during photic stimulation at frequencies of 5, 10, 15, and up to 30 Hz in 5 Hz increments. Preprocessing pipeline included Butterworth bandpass filtering (0.5-45 Hz), re-referencing to A1-A2, Artifact Subspace Reconstruction (ASR), Independent Component Analysis (ICA), and automatic artifact classification using ICLabel.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -61,10 +61,10 @@
       "term": "photic stimulation"
     },
     {
-      "term": "clinical neurophysiology"
+      "term": "electroencephalography"
     },
     {
-      "term": "neurodegenerative disease"
+      "term": "cognitive impairment"
     }
   ],
   "related_identifiers": [
