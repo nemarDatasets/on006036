@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A complementary dataset of open-eyes EEG recordings in a photo-stimulation setting from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
+  "description": "This dataset comprises open-eyes EEG recordings from 88 participants (36 with Alzheimer's disease, 23 with frontotemporal dementia, and 29 healthy controls) during photic stimulation at incremental frequencies (5-30 Hz). Recorded using a 19-channel scalp electrode montage according to the 10-20 system at 500 Hz sampling rate, the dataset complements a previously published eyes-closed resting-state EEG collection from the same cohort. Both raw and preprocessed versions are provided, with preprocessing including bandpass filtering, artifact subspace reconstruction, and independent component analysis.",
+  "methods_description": "EEG recordings were acquired using a Nihon Kohden EEG 2100 clinical device with 19 scalp electrodes (10-20 system) plus mastoid reference electrodes. Sampling rate was 500 Hz with 10 µV/mm resolution. Participants were seated with eyes open during photic stimulation at frequencies of 5, 10, 15, and up to 30 Hz in 5 Hz increments. Preprocessing included Butterworth bandpass filtering (0.5-45 Hz), re-referencing to A1-A2, Artifact Subspace Reconstruction (ASR), and Independent Component Analysis (ICA) with automatic artifact classification using ICLabel.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -43,12 +45,29 @@
       "orcid": "0000-0002-6757-1698"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006036.v1.0.6",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "Alzheimer's disease"
+    },
+    {
+      "term": "Frontotemporal Dementia",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D057180"
+    },
+    {
+      "term": "photic stimulation"
+    },
+    {
+      "term": "clinical neurophysiology"
+    },
+    {
+      "term": "neurodegenerative disease"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on006036",
       "identifier_type": "URL",
@@ -78,45 +97,27 @@
       "identifier": "10.3390/data10050064",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006036.v1.0.6",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "2.3 GB (178 files)"
   ],
   "formats": [
     ".json",
     ".md",
     ".set",
     ".study",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises open-eyes EEG recordings from 88 participants (36 with Alzheimer's disease, 23 with frontotemporal dementia, and 29 healthy controls) during photic stimulation at incremental frequencies (5-30 Hz). The recordings complement a previously published eyes-closed dataset from the same cohort and were acquired using a 19-channel scalp electrode montage according to the 10-20 international system. This resource enables investigation of neurophysiological responses to photic stimulation across neurodegenerative and healthy populations.",
-  "methods_description": "EEG recordings were acquired using a Nihon Kohden EEG 2100 clinical device with 19 scalp electrodes (10-20 system) plus mastoid reference electrodes. Sampling rate was 500 Hz with 10 µV/mm resolution. Participants were seated with eyes open during photic stimulation administered at incremental frequencies (5, 10, 15, and up to 30 Hz). Preprocessing included Butterworth band-pass filtering (0.5-45 Hz), re-referencing to A1-A2, Artifact Subspace Reconstruction (ASR), Independent Component Analysis (ICA), and automatic artifact rejection using ICLabel.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Alzheimer's disease"
-    },
-    {
-      "term": "Frontotemporal Dementia",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D057180"
-    },
-    {
-      "term": "photic stimulation"
-    },
-    {
-      "term": "neurophysiology"
-    },
-    {
-      "term": "clinical neurophysiology"
-    }
-  ],
-  "source_hash": "3682318639b9c092d7b69214e91af2e94a4f8bc74a3864198c9d5beaef437e7e"
+  "source_hash": "1bf70a010ae84ec1d276de6581f8fe99b96cbdbead4849f073e5fa909245bdf7"
 }
