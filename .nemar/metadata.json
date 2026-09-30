@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "A complementary dataset of open-eyes EEG recordings in a photo-stimulation setting from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
-  "description": "This dataset provides complementary EEG recordings, obtained under photic stimulation with eyes open, from a cohort of individuals with Alzheimer's disease, frontotemporal dementia, and healthy controls previously described in a related open-eyes-closed EEG dataset. Recordings were collected at incremental photic stimulation frequencies (5-30 Hz) at the 2nd Department of Neurology, AHEPA University Hospital, Thessaloniki, Greece, using a 19-channel clinical EEG system. The dataset includes both raw and preprocessed (denoised) EEG data, intended to support research on neurodegenerative disease biomarkers and cognitive decline.",
-  "methods_description": "EEG recordings were acquired using a Nihon Kohden EEG 2100 clinical device with 19 scalp electrodes (10-20 system) plus 2 mastoid electrodes, sampled at 500 Hz. Participants were seated with eyes open while exposed to photic stimulation at incremental frequencies from 5 Hz up to 30 Hz. Preprocessing included a 0.5-45 Hz Butterworth band-pass filter, re-referencing to A1-A2, Artifact Subspace Reconstruction (ASR) for artifact correction, and Independent Component Analysis (ICA) with automatic classification (ICLabel) to remove eye and jaw artifact components.",
+  "description": "This dataset provides eyes-open scalp EEG recordings acquired during intermittent photic stimulation (5 to 30 Hz in 5 Hz steps) from 36 participants with Alzheimer's disease, 23 with frontotemporal dementia, and 29 healthy controls. It complements an earlier eyes-closed resting-state dataset of the same cohort, and participant numbers match between the two. Raw and preprocessed (filtered, ASR- and ICA-cleaned) recordings are provided in BIDS format alongside clinical MMSE scores and demographics.",
+  "methods_description": "Recordings were made at the 2nd Department of Neurology of AHEPA General Hospital, Thessaloniki, with a Nihon Kohden EEG 2100 clinical device. Nineteen scalp electrodes were placed according to the 10-20 system, with A1/A2 mastoid electrodes, at a 500 Hz sampling rate, with impedance kept below 5 kOhm and Cz as the common reference. Preprocessing applied a 0.5-45 Hz Butterworth band-pass filter, re-referencing to A1-A2, Artifact Subspace Reconstruction, and ICA with ICLabel-based automatic rejection of eye and jaw components.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -65,13 +65,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D010775"
     },
     {
-      "term": "cognitive impairment"
+      "term": "eyes-open"
     },
     {
-      "term": "resting-state EEG"
-    },
-    {
-      "term": "biomarkers"
+      "term": "dementia"
     }
   ],
   "related_identifiers": [
@@ -88,7 +85,7 @@
     {
       "identifier": "10.18112/openneuro.ds004504.v1.0.8",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "References"
     },
     {
       "identifier": "10.3390/data8060095",
@@ -116,7 +113,7 @@
     "eeg"
   ],
   "sizes": [
-    "2.3 GB (178 files)"
+    "2.11 GB (178 files)"
   ],
   "formats": [
     ".json",
